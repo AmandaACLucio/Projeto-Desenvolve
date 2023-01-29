@@ -1,7 +1,4 @@
-﻿body{
-}
-
-#banner{
+﻿#banner{
     width: 100%;
 }
 
@@ -38,7 +35,7 @@ em strong{
     background: #FFFFFF;
 }
 
-ul{
+.itens-beneficios {
     display: inline-block;
     vertical-align: top;
     width: 20%;
