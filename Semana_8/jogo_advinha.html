@@ -1,0 +1,38 @@
+﻿<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n){
+
+        var numeroPensado = parseInt(Math.round(Math.random() * n));
+        return numeroPensado;
+    }
+
+    var n = parseInt(prompt("Digite um número para o intervalo de sorteio"));
+
+    var numeroPensado = sorteia(n);
+
+    var chute = parseInt(prompt("Digite um número entre 0 e 10"));
+
+    while(chute != numeroPensado){
+
+        if(chute > numeroPensado){
+            mostra("O número pensado é menor que o seu chute.");
+        }else{
+            mostra("O número pensado é maior que o seu chute.");
+        }
+
+        chute = parseInt(prompt("Digite um número entre 0 e 10"));
+    } //o while permite que o usuário continue tentando até acertar
+
+    mostra("Parabéns, você acertou o número pensado era " + numeroPensado + "!");
+
+</script>

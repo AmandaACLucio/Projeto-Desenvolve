@@ -1,0 +1,24 @@
+﻿<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var ano = 1930;
+    while(ano!=2022){
+        mostra("Teve copa em "+ano);
+        ano = ano + 4;
+    }
+
+    mostra("Fim do loop");
+
+
+
+</script>
